@@ -32,4 +32,4 @@ python TareaPdS.py
 
 ## Uso
 
-Este programa se ejecuta sin necesidad de inputs directos del usuario, durante su ejecución genera logs especificando qué archivos se está comparando con cuál, si estos poseen un match de caras o no y si es que ocurrió un error durante la ejecución. 
+Este programa se ejecuta sin necesidad de inputs directos del usuario, durante su ejecución genera logs especificando qué archivo se está comparando con cuál, si estos poseen un match de caras o no y si es que ocurrió un error durante la ejecución. 
