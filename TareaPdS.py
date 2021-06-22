@@ -10,6 +10,7 @@ formatter = logging.Formatter("%(asctime)s |:| %(levelname)s |:| %(message)s",
                               "%Y-%m-%d %H:%M:%S")
 ch.setFormatter(formatter)
 logger.addHandler(ch)
+logging.basicConfig(filename='Results.txt')
 
 
 def compare_faces(sourceFile, targetFile):
@@ -32,6 +33,25 @@ def compare_faces(sourceFile, targetFile):
     imageTarget.close()
     return len(response['FaceMatches'])
 
+
+"""urls = [
+    "https://tareapds.s3.us-east-2.amazonaws.com/imgs/rostro_30_abajo_p.jpg",
+    "https://tareapds.s3.us-east-2.amazonaws.com/imgs/rostro_30_abajo.jpg",
+    "https://tareapds.s3.us-east-2.amazonaws.com/imgs/rostro_30_arriba.jpg",
+    "https://tareapds.s3.us-east-2.amazonaws.com/imgs/rostro_45_arriba_p.jpg",
+    "https://tareapds.s3.us-east-2.amazonaws.com/imgs/rostro_adulto.jpg",
+    "https://tareapds.s3.us-east-2.amazonaws.com/imgs/rostro_blanco_negro.jpg",
+    "https://tareapds.s3.us-east-2.amazonaws.com/imgs/rostro_desenfocado.jpg",
+    "https://tareapds.s3.us-east-2.amazonaws.com/imgs/rostro_dibujo.jpg",
+    "https://tareapds.s3.us-east-2.amazonaws.com/imgs/rostro_expresion_exagerada.jpg",
+    "https://tareapds.s3.us-east-2.amazonaws.com/imgs/rostro_figura_real.jpg",
+    "https://tareapds.s3.us-east-2.amazonaws.com/imgs/rostro_muchas_sombras.jpg",
+    "https://tareapds.s3.us-east-2.amazonaws.com/imgs/rostro_ojos_cerrados.jpg",
+    "https://tareapds.s3.us-east-2.amazonaws.com/imgs/rostro_parecido.jpg",
+    "https://tareapds.s3.us-east-2.amazonaws.com/imgs/rostro_perfil.jpg",
+    "https://tareapds.s3.us-east-2.amazonaws.com/imgs/rostro_poco_contraste.jpg",
+    "https://tareapds.s3.us-east-2.amazonaws.com/imgs/rostro_sin_rostro.jpg"]
+"""
 
 urls = ["https://tareapds.s3.us-east-2.amazonaws.com/45arriba.jpg",
         "https://tareapds.s3.us-east-2.amazonaws.com/anakin.jpg",
