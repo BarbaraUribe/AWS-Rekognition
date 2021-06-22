@@ -37,3 +37,17 @@ python TareaPdS.py
 ## Uso
 
 Este programa se ejecuta sin necesidad de inputs directos del usuario, durante su ejecución genera logs especificando qué archivo se está comparando con cuál, si estos poseen un match de caras o no y si es que ocurrió un error durante la ejecución. 
+
+## Pruebas
+
+Las pruebas realizadas se encuentran [aquí](https://pruebas-de-software.ontestpad.com/script/2/report/HT?auth=1df2ba77c24de1e45b2af3c2f92798c3) y [aquí](https://aws-usm.ontestpad.com/script/2/report/?auth=13f66e08450803bce654d631f3d6abb9). Las pruebas correspondientes a este código son aquellas que aparecen primero en la tabla representada. Las otras pruebas corresponden a las pruebas realizadas al código de mi compañera Valerie.
+
+Finalmente, los criterios de aceptación utilizados para ellas fueron los siguientes:
+
+Para considerar uno de los siguientes casos a probar como fallido o exitoso se deben cumplir lo siguiente:
+
+Si en la imagen aparece la cara del personaje Luke Skywalker el programa debe arrojar que existe una coincidencia y suministrar el porcentaje de seguridad que tiene al hacer esta aseveración.
+
+Por otro lado, si en la imagen no aparece la cara del personaje Luke Skywalker pero si existen caras distintas a la suya, el programa deberá arrojar que no se encontró coincidencia entre las imágenes.
+
+Finalmente, si la imagen ingresada no posee ningún rostro el programa arrojará un error, ya que compareFaces no encontró ninguna cara y no tiene con qué comparar nuestra imagen base.
