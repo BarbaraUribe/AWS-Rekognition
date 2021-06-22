@@ -18,7 +18,7 @@ pip install requests
 
 ## Ejecución
 
-Para poder ejecutar este programa tenemos varias opciones, pero antes de ver estas debemos asegurarnos de que dentro del directorio donde se encuentra nuestro programa debemos tener una carpeta llamada imgs que contenga las imágenes a ser probadas por nuestro código, estas deben tener extensión ".png" o ".jpg"
+Para poder ejecutar este programa tenemos varias opciones, pero antes de ver estas debemos asegurarnos de editar la lista de urls dentro de nuestro programa, esta lista contiene las urls de cada imagen almacenada en S3. Estas deben tener extensión ".png" o ".jpg"
 
 ### Ejecución mediante IDLE de Python:
 
