@@ -6,10 +6,13 @@
 
 Para poder utilizar este programa se debe instalar [Python 3.9.4](https://www.python.org) en su última versión. En el link indicado se puede descargar y seguir los pasos indicados para su instalación.
 
-Además, se debe instalar la libreria boto3, esto se realiza mediante ingresar la siguiente línea de comandos en nuestra terminal:
+Además, se debe instalar la librería boto3 y la librería requests, esto se realiza mediante ingresar las siguientes líneas de comandos en nuestra terminal:
 
 `
 pip install boto3
+`
+`
+pip install requests
 `
 
 ## Ejecución
